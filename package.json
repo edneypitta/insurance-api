@@ -1,0 +1,19 @@
+{
+  "name": "insurance-api",
+  "version": "1.0.0",
+  "description": "Insurance API to manage users and policies",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edneypitta/insurance-api.git"
+  },
+  "author": "Edney Pitta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edneypitta/insurance-api/issues"
+  },
+  "homepage": "https://github.com/edneypitta/insurance-api#readme"
+}
