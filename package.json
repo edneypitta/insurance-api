@@ -2,18 +2,23 @@
   "name": "insurance-api",
   "version": "1.0.0",
   "description": "Insurance API to manage users and policies",
-  "main": "index.js",
   "scripts": {
+    "start": "nodemon --experimental-modules index.mjs",
     "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edneypitta/insurance-api.git"
   },
-  "author": "Edney Pitta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/edneypitta/insurance-api/issues"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.4.0"
   },
-  "homepage": "https://github.com/edneypitta/insurance-api#readme"
+  "author": "Edney Pitta",
+  "homepage": "https://github.com/edneypitta/insurance-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
 }
