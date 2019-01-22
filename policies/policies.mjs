@@ -1,11 +1,12 @@
 ﻿import data from '../data/policies.json'
+import ApplicationError from '../infra/application-error'
 import { filterBy as filterUsersBy } from '../users/users'
 
 const policies = data.policies
 
 export const filterBy = username => {
   if (!username)
-    throw 'Must provide a username'
+    throw new ApplicationError('Must provide a username')
 
   const users = filterUsersBy(null, username)
   if (!users || users.length === 0 || users.length > 1)

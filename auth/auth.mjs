@@ -12,7 +12,7 @@ export const authenticate = email => {
 
   const token = jwt.sign({ sub: user.id, role: user.role }, SECRET)
   return {
-    ...user,
-    token
+    token,
+    user
   }
 }

@@ -9,7 +9,7 @@ router.post('/login', (req, res) => {
   if (user)
     return res.json(user)
 
-  return res.status(400).json({ message: 'Invalid credentials' })
+  return res.status(401).json({ message: 'Invalid credentials' })
 })
 
 export default router
